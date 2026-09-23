@@ -117,14 +117,8 @@ document.querySelectorAll(".js-quote").forEach((form) => {
     if (message) lines.push(`Notes: ${message}`);
 
     const url = `https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent(lines.join("\n"))}`;
-    window.open(url, "_blank", "noopener");
-    note.append(`Thanks, ${name.value.trim()}. If WhatsApp did not open, use this link: `);
-    const anchor = document.createElement("a");
-    anchor.href = url;
-    anchor.target = "_blank";
-    anchor.rel = "noopener";
-    anchor.textContent = "Open WhatsApp";
-    note.append(anchor);
+    note.textContent = `Opening WhatsApp for ${name.value.trim()}...`;
+    window.location.assign(url);
   });
 });
 
