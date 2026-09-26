@@ -10,6 +10,11 @@ document.querySelectorAll("a.js-phone-2").forEach((el) => {
   if (!el.hasAttribute("data-keep-label")) el.textContent = SITE.phoneDisplay2;
 });
 
+document.querySelectorAll("a.js-phone-land").forEach((el) => {
+  el.href = `tel:${SITE.phoneTelLand}`;
+  if (!el.hasAttribute("data-keep-label")) el.textContent = SITE.phoneDisplayLand;
+});
+
 document.querySelectorAll("a.js-email").forEach((el) => {
   el.href = `mailto:${SITE.email}`;
   el.textContent = SITE.email;

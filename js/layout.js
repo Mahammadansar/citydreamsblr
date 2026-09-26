@@ -3,6 +3,8 @@ const SITE = {
   phoneTel: "+918867055353",
   phoneDisplay2: "+91 88670 75353",
   phoneTel2: "+918867075353",
+  phoneDisplayLand: "080-23322060",
+  phoneTelLand: "+918023322060",
   whatsapp: "918867055353",
   email: "info@citydreamsblr.com",
   url: "https://citydreamsblr.com",
@@ -101,6 +103,7 @@ if (header) {
           <div class="topbar__links">
             <a class="js-phone" href="tel:${SITE.phoneTel}">${SITE.phoneDisplay}</a>
             <a class="js-phone-2" href="tel:${SITE.phoneTel2}">${SITE.phoneDisplay2}</a>
+            <a class="js-phone-land" href="tel:${SITE.phoneTelLand}">${SITE.phoneDisplayLand}</a>
             <a class="js-email" href="mailto:${SITE.email}">${SITE.email}</a>
           </div>
         </div>

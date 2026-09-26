@@ -375,8 +375,10 @@ ul { margin: 0; padding: 0; list-style: none; }
 
 .float-card .js-phone,
 .float-card .js-phone-2,
+.float-card .js-phone-land,
 .info-card .js-phone,
-.info-card .js-phone-2 { display: block; font-weight: 650; }
+.info-card .js-phone-2,
+.info-card .js-phone-land { display: block; font-weight: 650; }
 
 /* Cards and grids */
 .book-band { margin-top: -3.2rem; position: relative; z-index: 2; }
@@ -707,7 +709,7 @@ textarea { min-height: 120px; resize: vertical; }
 
 .detail ul { margin-top: 0.6rem; display: grid; gap: 0.3rem; }
 
-.detail li::before { content: "ù "; color: var(--green-700); }
+.detail li::before { content: "¬ù "; color: var(--green-700); }
 
 .prose { max-width: 760px; }
 
